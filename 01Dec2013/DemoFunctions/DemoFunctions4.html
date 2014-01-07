@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+
+        function doSomething(){
+            var hello = 6;
+            return function (){
+                return hello;
+            };
+        }
+
+        var abc = doSomething();
+        alert(abc());
+        //alert(doSomething());
+        //alert(hello)
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

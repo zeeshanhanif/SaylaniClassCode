@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+
+        function hello(value){
+
+            alert(value);
+            alert(isNaN(value));
+            if(isNaN(value)){
+                alert("Value is Not a Number");
+                throw "Noman bhaiii... Value is not a Number";
+            }
+            else {
+                alert("Value is Number")
+            }
+        }
+        var userInput =
+                parseInt(prompt("Please Enter number"));
+
+        hello(userInput);
+        alert("completed");
+    </script>
+</head>
+<body>
+
+</body>
+</html>

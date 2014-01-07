@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        function myFor(array,action){
+            //action(67);
+
+            for(var i=0;i<array.length;i++){
+                //document.write("I = "+i+"<br>")
+                action(array[i]);
+            }
+
+        }
+
+        function abc(val){
+            document.write("val = "+val+"<br>")
+        }
+
+        function xyz(val){
+            alert("val = "+val);
+        }
+
+        var a = [4,6,3,9];
+        myFor(a,abc);
+        myFor([6,3,7],xyz);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
