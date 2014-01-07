@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+
+        function Student(){
+            //alert("Student");
+            this.name = "Hello";
+            this.age = 45;
+        }
+        Student.prototype.study = function (){
+            alert("study "+this.name);
+        }
+        Student.prototype.email = "hello@yahoo.com";
+        var stu1 = new Student();
+        var stu2 = new Student();
+        alert(Student.prototype.email);
+        alert(stu1.email);
+        alert(stu2.email);
+        stu1.email = "world@yahoo.com";
+        alert(Student.prototype.email);
+        alert(stu1.email);
+        alert(stu2.email);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

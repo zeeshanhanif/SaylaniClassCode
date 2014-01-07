@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        function study(){
+            alert("Study "+this.name);
+        }
+        var student1 = {
+            name:"Hello",
+            age:23
+        };
+        var student2 = {
+            name:"World",
+            age:67
+        };
+        student1.study = study;
+        student2.study = study;
+
+        student1.study();
+        student2.study();
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

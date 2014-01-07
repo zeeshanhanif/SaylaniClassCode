@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        function myFor(array,func){
+            for(var i=0;i<array.length;i++){
+                func(array[i]);
+            }
+        }
+        function calculate(base, numbers,func1){
+            myFor(numbers,function (val){
+                base = func1(base,val);
+            });
+            return base;
+
+        }
+        function add(a,b){
+            return a+b;
+        }
+        function multiply(a,b){
+            return a*b;
+        }
+
+        //var aa = calculate(0,[3,5,1],add);
+        var aa = calculate(1,[3,5,2],multiply);
+        document.write(aa);
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

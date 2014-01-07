@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+
+        function Student(){
+            //alert("Student");
+            this.name = "Hello";
+            this.age = 45;
+        }
+        Student.prototype.study = function (){
+            alert("study "+this.name);
+        }
+
+        var stu = new Student();
+        var stu2 = new Student();
+        stu.study();
+        stu2.study();
+    </script>
+</head>
+<body>
+
+</body>
+</html>
