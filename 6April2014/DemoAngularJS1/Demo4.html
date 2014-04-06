@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="js/angular.js"></script>
+    <script src="Demo4.js"></script>
+</head>
+<body ng-app>
+
+    <div ng-controller="Ctrl1">
+        Ctrl1
+        <input type="button" value="Ctrl1" ng-click="ctrl1Click()">
+        <div ng-controller="Ctrl2">
+            Ctrl2
+            <input type="button" value="Ctrl2" ng-click="ctrl2Click()">
+            <div ng-controller="Ctrl3">
+                Ctrl3
+                <input type="button" value="Ctrl3" ng-click="ctrl3Click()">
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+

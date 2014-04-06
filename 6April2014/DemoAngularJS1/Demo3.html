@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="js/angular.js"></script>
+    <script src="Demo3.js"></script>
+</head>
+<body ng-app>
+<div ng-controller="Ctrl1">
+    Say hello to: <input type="text" ng-model="name"><br>
+    <h1>Hello, {{name}}!</h1>
+
+    <div ng-controller="Ctrl2">
+        Say hello to: <input type="text" ng-model="name"><br>
+        <h1>Hello, {{name}}!</h1>
+
+    </div>
+
+</div>
+
+<div ng-controller="WorldCtrl">
+    <ul>
+        <li ng-repeat="country in countries">
+            {{country.name}} has population of {{country.population}}
+        </li>
+        <hr>
+        World's population: {{population}} millions
+    </ul>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+

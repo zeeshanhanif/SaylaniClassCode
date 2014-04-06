@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="js/angular.js"></script>
+    <script src="Demo2.js"></script>
+</head>
+<body ng-app>
+<div ng-controller="HelloCtrl">
+    Say hello to: <input type="text" ng-model="name"><br>
+    <h1>Hello, {{name}}!</h1>
+    <h1>Age, {{obj.firstName}}!</h1>
+    <br>
+    <h2>{{getName()}} </h2>
+</div>
+
+</body>
+</html>
