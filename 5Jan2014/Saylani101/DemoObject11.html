@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        function Customer(nic, name, creditLimit){
+            this.nic = nic;
+            this.name = name;
+            this.creditLimit = creditLimit;
+
+            this.totalCredit = 0;
+        }
+
+        Customer.prototype.buying = function(amount){
+           var creditTaken = this.totalCredit + amount;
+            if(creditTaken <= this.creditLimit){
+                this.totalCredit += amount;
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+        var c1 = new Customer("4536643333", "Kazi", 50000);
+        var c2 = new Customer("4536333643333", "Zeeshan", 80000);
+        var approved = c2.buying(4000);
+
+        var c3 = Customer("4536643333", "Kazi", 50000);
+
+alert(c3.totalCredit);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

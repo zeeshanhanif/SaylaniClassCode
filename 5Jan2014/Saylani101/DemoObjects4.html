@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        function study(a){
+            alert("Study "+this.name+" A = "+a);
+        }
+        var student1 = {
+            name:"Hello",
+            age:23
+        };
+        var student2 = {
+            name:"World",
+            age:67
+        };
+
+        study.apply(student1,["AAA"]);
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+
+        function Student(){
+            //alert("Student");
+            this.name = "Hello";
+            this.age = 45;
+            this.study = function (){
+                alert("study "+this.name);
+            }
+            //1 .. constructor = Student
+            //2 .. this == current object ref
+            //3 .. this.prototype = new Object()
+            //4 .. return this
+        }
+
+        var stu = new Student();
+        var stu2 = new Student();
+        stu2.name = "World";
+        //alert(stu.name);
+        //alert(stu2.name);
+        stu.study();
+        stu2.study();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        function myFor(array,func){
+            for(var i=0;i<array.length;i++){
+                func(array[i]);
+            }
+        }
+        function sum(numbers){
+            var total = 0;
+            myFor(numbers,function (val){
+                total +=val;
+            });
+            return total;
+
+        }
+
+        var aa = sum([3,5,1]);
+        document.write(aa);
+        /*
+        myFor([3,5,6], function (abc){
+            document.write(abc+"<br>");
+        });
+        */
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

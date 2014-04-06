@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+
+        function myFor(array,func){
+            for(var i=0;i<array.length;i++){
+                func(array[i]);
+            }
+        }
+
+        function electricWork(val){
+            document.write("Fixing Light in "+val+"<br>");
+        }
+        function paintWork(val){
+            document.write("Painting in Room "+val+"<br>");
+        }
+
+        myFor([3,5,6,56],electricWork);
+        myFor([3,5,6,56],paintWork);
+
+        myFor([45,12],electricWork)
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
