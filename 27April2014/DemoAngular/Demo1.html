@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="js/angular.min.js"></script>
+    <script src="js/Demo1.js"></script>
+</head>
+<body ng-app="Demo">
+    <div ng-controller="FirstCtrl">
+        <p>
+            {{name}}
+        </p>
+        <p>
+            {{myService.name}}
+        </p>
+        <p>
+            {{myFactory.name}}
+        </p>
+        <p>
+            {{myProvider.name}}
+        </p>
+        <p>
+            {{myConst}}
+        </p>
+        <input type="button" value="Click" ng-click="updateValue()">
+    </div>
+<div data-ng-controller="SecondCtrl">
+    <p>
+        {{name}}
+    </p>
+    <p>
+        {{myService.name}}
+    </p>
+    <p>
+        {{myFactory.name}}
+    </p>
+</div>
+
+</body>
+</html>
